@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Tareas - Apoyo Estudiantil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda de Tareas</h1>
+        
+        <input type="text" id="taskInput" placeholder="Escribe tu tarea aquí..." />
+        <input type="datetime-local" id="taskDate" />
+        
+        <select id="taskCategory">
+            <option value="">Selecciona una categoría</option>
+            <option value="Tarea">Tarea</option>
+            <option value="Examen">Examen</option>
+            <option value="Proyecto">Proyecto</option>
+        </select>
+        
+        <button id="addTaskBtn">Agregar Tarea</button>
+        
+        <h2>Lista de Tareas</h2>
+        <ul id="taskList"></ul>
+        
+        <h2>Consejos de Estudio</h2>
+        <div id="studyTips"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
